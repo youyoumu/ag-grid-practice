@@ -57,7 +57,6 @@ export default function App() {
   }
 
   const SuccessfullIconRenderer = (props) => {
-    console.log(props.value)
     return (
       <span width="100%" height="100%">
         {props.value ? '✅' : '❌'}
@@ -69,8 +68,7 @@ export default function App() {
   const [colDefs, setColDefs] = useState([
     {
       field: 'mission',
-      cellRenderer: CompanyLogoRenderer,
-      checkboxSelection: true
+      cellRenderer: CompanyLogoRenderer
     },
     { field: 'company' },
     { field: 'location' },
